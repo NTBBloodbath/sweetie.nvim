@@ -15,6 +15,20 @@ plugins.setup = function(config)
 
   if integrations.neorg then
     highlights = vim.tbl_extend("force", highlights, {
+      -- Heading
+      ["@neorg.headings.1.title"] = { fg = palette.magenta, bold = true },
+      ["@neorg.headings.1.prefix"] = { fg = palette.magenta, bold = true },
+      ["@neorg.headings.2.title"] = { fg = palette.blue, bold = true },
+      ["@neorg.headings.2.prefix"] = { fg = palette.blue, bold = true },
+      ["@neorg.headings.3.title"] = { fg = palette.violet, bold = true },
+      ["@neorg.headings.3.prefix"] = { fg = palette.violet, bold = true },
+      ["@neorg.headings.4.title"] = { fg = palette.green, bold = true },
+      ["@neorg.headings.4.prefix"] = { fg = palette.green, bold = true },
+      ["@neorg.headings.5.title"] = { fg = palette.yellow, bold = true },
+      ["@neorg.headings.5.prefix"] = { fg = palette.yellow, bold = true },
+      ["@neorg.headings.6.title"] = { fg = palette.orange, bold = true },
+      ["@neorg.headings.6.prefix"] = { fg = palette.orange, bold = true },
+      -- Markup
       ["@neorg.markup.verbatim"] = { fg = palette.dark_grey },
       -- Colors are for nested quotes
       Red = { fg = palette.red },
