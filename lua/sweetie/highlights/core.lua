@@ -128,7 +128,7 @@ local core = {
   FunctionBuiltin = { fg = palette.magenta, bold = true },
   Method = { fg = palette.violet },
 
-  Type = { fg = palette.orange, italic = true },
+  Type = { fg = palette.orange },
   Typedef = { fg = palette.blue },
   TypeBuiltin = { fg = palette.orange, bold = true },
   Class = { fg = palette.magenta, italic = true },
