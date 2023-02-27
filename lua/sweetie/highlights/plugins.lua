@@ -15,13 +15,13 @@ plugins.setup = function(config)
 
   if integrations.neorg then
     highlights = vim.tbl_extend("force", highlights, {
-      NeorgMarkupVerbatim = { link = "@comment" },
+      ["@neorg.markup.verbatim"] = { fg = palette.dark_grey },
       -- Colors are for nested quotes
       Red = { fg = palette.red },
       Blue = { fg = palette.blue },
       Green = { fg = palette.green },
+      Brown = { fg = palette.orange },
       Yellow = { fg = palette.yellow },
-      Orange = { fg = palette.orange },
     })
   end
   if integrations.neogit then
