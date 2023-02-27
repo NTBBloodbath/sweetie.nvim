@@ -56,7 +56,7 @@ local core = {
   IncSearchCursor = { reverse = true },
 
   Conceal = { fg = palette.grey },
-  NonText = { fg = palette.fg_alt, bold = true },
+  NonText = { fg = palette.dark_grey, bold = true },
   MatchParen = { reverse = true },
   Whitespace = { link = "NonText" },
 
