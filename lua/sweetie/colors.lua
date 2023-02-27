@@ -14,7 +14,7 @@ colors.palette = {
     fg_alt = "#eeffee",
 
     grey = "#9e9e9e",
-    dark_grey = "#969696",
+    dark_grey = "#7e7e7e",
     red = "#e87272",
     orange = "#f4b47c",
     green = "#91f582",
