@@ -278,6 +278,10 @@ local treesitter = {
     default = true,
     link = "Type",
   },
+  ["@variable"] = {
+    default = true,
+    link = "@text",
+  },
   ["@variable.builtin"] = {
     default = true,
     link = "VariableBuiltin",
