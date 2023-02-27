@@ -8,15 +8,14 @@ local sweetie = {}
 local config = require("sweetie.config")
 local highlights = require("sweetie.highlights")
 
-local user_config = config
-
 sweetie.setup = function(opts)
   opts = opts or {}
-
-  user_config = vim.tbl_deep_extend("force", user_config, opts)
+  -- NOTE: I hate using global namespaces, however this seems to be the only workaround
+  --       to get everything working as expected when modifying settings.
+  _G.__sweetie_config = vim.tbl_deep_extend("force", config, opts)
 end
 
-sweetie.set = function() highlights.setup(user_config) end
+sweetie.set = function() highlights.setup(_G.__sweetie_config or config) end
 
 return sweetie
 
