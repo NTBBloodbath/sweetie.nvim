@@ -24,6 +24,26 @@ plugins.setup = function(config)
       Orange = { fg = palette.orange },
     })
   end
+  if integrations.neogit then
+    highlights = vim.tbl_extend("force", highlights, {
+      NeogitFold = { link = "Folded" },
+      NeogitBranch = { fg = palette.magenta },
+      NeogitRemote = { fg = palette.violet },
+      NeogitStashes = { fg = palette.blue, bold = true },
+      NeogitHunkHeader = { fg = palette.fg, bg = "#303042" },
+      NeogitHunkHeaderHighlight = { fg = palette.teal, bg = palette.bg_alt },
+      NeogitDiffAdd = { fg = palette.green, bg = "#303042" },
+      NeogitDiffAddHighlight = { fg = palette.green, bg = "#303042", bold = true },
+      NeogitDiffDelete = { fg = palette.red, bg = "#303042" },
+      NeogitDiffDeleteHighlight = { fg = palette.red, bg = "#303042", bold = true },
+      NeogitDiffContext = { fg = palette.fg_alt, bg = palette.bg },
+      NeogitDiffContextHighlight = { fg = palette.fg, bg = palette.bg_alt, bold = true },
+      NeogitStagedChanges = { fg = palette.blue, bold = true },
+      NeogitUnstagedChanges = { fg = palette.blue, bold = true },
+      NeogitStagedChangesRegion = { bg = palette.bg_alt },
+      NeogitUntrackedfiles = { fg = palette.violet, bold = true },
+    })
+  end
   if integrations.telescope then
     highlights = vim.tbl_extend("force", highlights, {
       TelescopeNormal = { fg = palette.fg },

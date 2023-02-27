@@ -8,6 +8,7 @@ local config = {
   overrides = {},
   integrations = {
     neorg = true,
+    neogit = true,
     telescope = true,
   },
   terminal_colors = true,
