@@ -13,8 +13,8 @@ colors.palette = {
     bg_alt = "#232331",
     fg_alt = "#eeffee",
 
-    grey = "#9e9e9e",
-    dark_grey = "#7e7e7e",
+    grey = "#7e7e7e",
+    dark_grey = "#5e5e5e",
     red = "#e87272",
     orange = "#f4b47c",
     green = "#91f582",
