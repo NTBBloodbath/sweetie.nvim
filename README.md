@@ -8,6 +8,8 @@ by hand after a long day testing different colors one by one and comparing them.
 
 > sweetie.nvim requires at least Neovim `>= 0.7.2` in order to work!
 
+![demo](https://user-images.githubusercontent.com/36456999/221467923-d7b1ff8e-7eb2-461e-a8cb-f831a15ee75c.png)
+
 ## Installation
 
 - `packer.nvim`:
