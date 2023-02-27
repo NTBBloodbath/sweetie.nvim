@@ -5,6 +5,11 @@ local palette = colors.get_palette(current_bg)
 --- Language-specific sweetie highlighting groups
 ---@class languages
 local languages = {
+  --- Java ---
+  ------------
+  ["@type.java"] = { fg = palette.orange, italic = true },
+  ["@type.qualifier.java"] = { fg = palette.orange, italic = true },
+
   --- Markdown ---
   ----------------
   markdownCode = { fg = palette.grey },
