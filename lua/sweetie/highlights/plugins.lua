@@ -1,7 +1,3 @@
-local colors = require("sweetie.colors")
-local current_bg = vim.opt.background:get()
-local palette = colors.get_palette(current_bg)
-
 --- Plugins sweetie highlighting groups
 ---@class plugins
 local plugins = {}
@@ -9,7 +5,7 @@ local plugins = {}
 --- Set up highlighting groups for plugins
 ---@param config
 ---@return table
-plugins.setup = function(config)
+plugins.setup = function(palette, config)
   local highlights = {}
   local integrations = config.integrations
 

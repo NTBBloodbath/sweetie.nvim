@@ -2,18 +2,20 @@
 ---@class highlights
 local highlights = {}
 
---- Highlighting groups
-local lsp = require("sweetie.highlights.lsp")
-local core = require("sweetie.highlights.core")
-local plugins = require("sweetie.highlights.plugins")
-local languages = require("sweetie.highlights.languages")
-local treesitter = require("sweetie.highlights.treesitter")
-
 --- Set up highlighting groups
 ---@param config table Sweetie configuration
 highlights.setup = function(config)
-  local plugins_hl = plugins.setup(config)
-  local groups = { core, lsp, treesitter, languages, plugins_hl }
+  local current_bg = vim.opt.background:get()
+  local palette = require("sweetie.colors").get_palette(current_bg)
+
+  --- Highlighting groups
+  local groups = {
+    require("sweetie.highlights.core").setup(palette),
+    require("sweetie.highlights.lsp").setup(palette),
+    require("sweetie.highlights.treesitter").setup(palette),
+    require("sweetie.highlights.languages").setup(palette),
+    require("sweetie.highlights.plugins").setup(palette, config),
+  }
 
   --- Apply highlighting groups
   for _, group in ipairs(groups) do
@@ -36,9 +38,6 @@ highlights.setup = function(config)
 
   --- Apply `:terminal` colors
   if config.terminal_colors then
-    local current_bg = vim.opt.background:get()
-    local palette = require("sweetie.colors").get_palette(current_bg)
-
     vim.g.terminal_color_0 = palette.bg
     vim.g.terminal_color_1 = palette.red
     vim.g.terminal_color_2 = palette.green
