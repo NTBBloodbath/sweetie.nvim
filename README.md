@@ -58,12 +58,17 @@ overrides = {
 }
 ```
 
+> Every `overrides` field accept all the `:h nvim_set_hl` parameters.
+
 ## Roadmap
 
-- [ ] Add light theme variant
+- [ ] Add light theme variant (WIP)
+- [ ] Allow to override default color palette
 - [ ] Add more extra themes
   - [ ] bat
+  - [x] termux
   - [ ] fish shell
+  - [x] florisboard
 
 ## License
 
