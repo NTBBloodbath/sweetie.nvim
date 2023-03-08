@@ -25,9 +25,27 @@ colors.palette = {
     violet = "#d8b5ff",
     cyan = "#b5e9ff",
   },
+  ---@field light table<string, string>
+  light = {
+    bg = "#dddde7",
+    fg = "#202023",
+
+    bg_alt = "#ccccda",
+    fg_alt = "#18181a",
+
+    grey = "#9a9ab6", -- Perhaps we should use #8989a9 instead?
+    dark_grey = "#78789d",
+    red = "#b31919",
+    orange = "#da6f12",
+    green = "#287f0d",
+    teal = "#47948a",
+    yellow = "#957d09", -- Perhaps we should use #ae920a instead?
+    blue = "#0c5090",
+    magenta = "#a00c79",
+    violet = "#9437ff",
+    cyan = "#0b658e",
+  },
 }
--- TODO: add light theme variant
-colors.palette.light = colors.palette.dark
 
 --- Get sweetie palette variant based on current background
 ---@param current_bg string Current Neovim background
