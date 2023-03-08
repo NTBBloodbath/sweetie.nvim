@@ -37,7 +37,7 @@ colors.palette = {
     bg_alt = "#ccccda",
     fg_alt = "#18181a",
 
-    grey = "#9a9ab6", -- Perhaps we should use #8989a9 instead?
+    grey = "#8989a9",
     dark_grey = "#78789d",
     red = "#b31919",
     orange = "#da6f12",
