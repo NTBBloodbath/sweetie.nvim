@@ -10,6 +10,8 @@ colors.palette = {
     bg = "#2a2a3a",
     fg = "#fdfffd",
 
+    bg_hl = "#37374c",
+
     bg_alt = "#232331",
     fg_alt = "#eeffee",
 
@@ -29,6 +31,8 @@ colors.palette = {
   light = {
     bg = "#dddde7",
     fg = "#202023",
+
+    bg_hl = "#bbbbce",
 
     bg_alt = "#ccccda",
     fg_alt = "#18181a",

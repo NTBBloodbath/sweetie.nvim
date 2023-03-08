@@ -13,8 +13,8 @@ core.setup = function(palette)
     NormalPopover = { fg = palette.fg, bg = palette.bg_alt },
     EndOfBuffer = { fg = palette.bg, bg = palette.bg },
 
-    Visual = { bg = palette.bg_alt },
-    VisualBold = { bg = palette.bg_alt, bold = true },
+    Visual = { bg = palette.bg_hl },
+    VisualBold = { bg = palette.bg_hl, bold = true },
 
     LineNr = { fg = palette.fg, bg = palette.bg },
     LineNrAbove = { fg = palette.grey, bg = palette.bg },
