@@ -26,6 +26,8 @@ plugins.setup = function(palette, config)
       ["@neorg.headings.6.prefix"] = { fg = palette.orange, bold = true },
       -- Markup
       ["@neorg.markup.verbatim"] = { fg = palette.dark_grey },
+      -- Code block
+      ["@neorg.tags.ranged_verbatim.code_block"] = { bg = palette.bg_alt },
       -- Colors are for nested quotes
       Red = { fg = palette.red },
       Blue = { fg = palette.blue },
