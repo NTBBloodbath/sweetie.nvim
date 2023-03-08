@@ -11,6 +11,7 @@ local config = {
     neogit = true,
     telescope = true,
   },
+  cursor_color = true,
   terminal_colors = true,
 }
 

@@ -36,6 +36,11 @@ highlights.setup = function(config)
     end
   end
 
+  --- Apply custom cursor color
+  if config.cursor_color then
+    vim.opt.guicursor = "n-v-c:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor25-Cursor"
+  end
+
   --- Apply `:terminal` colors
   if config.terminal_colors then
     vim.g.terminal_color_0 = palette.bg

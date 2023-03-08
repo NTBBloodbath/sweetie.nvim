@@ -46,6 +46,7 @@ require("sweetie").setup({
     neogit = true,
     telescope = true,
   },
+  cursor_color = true,
   terminal_colors = true,
 })
 ```
