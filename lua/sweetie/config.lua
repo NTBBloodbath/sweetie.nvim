@@ -7,6 +7,7 @@ local config = {
   },
   overrides = {},
   integrations = {
+    lazy = true,
     neorg = true,
     neogit = true,
     telescope = true,

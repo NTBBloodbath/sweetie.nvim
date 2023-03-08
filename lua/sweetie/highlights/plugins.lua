@@ -9,6 +9,11 @@ plugins.setup = function(palette, config)
   local highlights = {}
   local integrations = config.integrations
 
+  if integrations.lazy then
+    highlights = vim.tbl_extend("force", highlights, {
+      LazyProgressTodo = { bg = palette.bg_alt },
+    })
+  end
   if integrations.neorg then
     highlights = vim.tbl_extend("force", highlights, {
       -- Heading

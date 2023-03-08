@@ -50,6 +50,7 @@ require("sweetie").setup({
   },
   overrides = {},
   integrations = {
+    lazy = true,
     neorg = true,
     neogit = true,
     telescope = true,
