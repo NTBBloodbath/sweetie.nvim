@@ -71,7 +71,7 @@ overrides = {
 
 ## Roadmap
 
-- [ ] Add light theme variant (WIP)
+- [x] Add light theme variant
 - [ ] Allow to override default color palette
 - [ ] Add more extra themes
   - [ ] bat
