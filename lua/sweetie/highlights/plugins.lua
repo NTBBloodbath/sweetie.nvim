@@ -11,6 +11,7 @@ plugins.setup = function(palette, config)
 
   if integrations.lazy then
     highlights = vim.tbl_extend("force", highlights, {
+      LazyCommit = { link = "Label" },
       LazyProgressTodo = { link = "NormalFloat" },
     })
   end
