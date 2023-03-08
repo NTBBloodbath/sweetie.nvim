@@ -19,7 +19,7 @@ core.setup = function(palette)
     LineNr = { fg = palette.fg, bg = palette.bg },
     LineNrAbove = { fg = palette.grey, bg = palette.bg },
     LineNrBelow = { fg = palette.grey, bg = palette.bg },
-    Cursor = { bg = vim.o.background == "dark" and palette.blue or palette.violet },
+    Cursor = { bg = vim.o.background == "dark" and palette.blue or palette.dark_grey },
     CursorLine = { bg = palette.bg_alt },
     CursorLineNr = { fg = palette.fg, bg = palette.bg_alt },
     CursorLineSign = { link = "CursorLine" },
