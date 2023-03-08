@@ -11,7 +11,7 @@ plugins.setup = function(palette, config)
 
   if integrations.lazy then
     highlights = vim.tbl_extend("force", highlights, {
-      LazyProgressTodo = { bg = palette.bg_alt },
+      LazyProgressTodo = { link = "NormalFloat" },
     })
   end
   if integrations.neorg then
