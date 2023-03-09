@@ -3,9 +3,9 @@
 local colors = {}
 
 ---@class colors.palette
----@alias colors.palette table
+---@field dark table<string, string>
+---@field light table<string, string>
 colors.palette = {
-  ---@field dark table<string, string>
   dark = {
     bg = "#2a2a3a",
     fg = "#fdfffd",
@@ -27,7 +27,6 @@ colors.palette = {
     violet = "#d8b5ff",
     cyan = "#b5e9ff",
   },
-  ---@field light table<string, string>
   light = {
     bg = "#dddde7",
     fg = "#202023",

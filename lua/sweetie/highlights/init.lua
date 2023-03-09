@@ -6,7 +6,8 @@ local highlights = {}
 ---@param config table Sweetie configuration
 highlights.setup = function(config)
   local current_bg = vim.opt.background:get()
-  local palette = require("sweetie.colors").get_palette(current_bg)
+  local palettes = vim.tbl_deep_extend("force", require("sweetie.colors").palette, config.palette)
+  local palette = palettes[current_bg]
 
   --- Highlighting groups
   local groups = {

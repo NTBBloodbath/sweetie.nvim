@@ -51,6 +51,28 @@ require("sweetie").setup({
     enable = true,
     transparency_amount = 20,
   },
+  -- Override default sweetie color palettes
+  -- Palette fields:
+  --  bg
+  --  fg
+  --  bg_hl 
+  --  bg_alt
+  --  fg_alt
+  --  grey
+  --  dark_grey
+  --  red
+  --  orange
+  --  green
+  --  teal
+  --  yellow
+  --  blue
+  --  magenta
+  --  violet
+  --  cyan
+  palette = {
+    dark = {},
+    light = {},
+  },
   -- Override default highlighting groups options
   overrides = {},
   -- Custom plugins highlighting groups
@@ -87,7 +109,7 @@ overrides = {
 ## Roadmap
 
 - [x] Add light theme variant
-- [ ] Allow to override default color palette
+- [x] Allow to override default color palette
 - [ ] Add more extra themes
   - [ ] bat
   - [x] termux

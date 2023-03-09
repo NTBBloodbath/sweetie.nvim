@@ -5,6 +5,10 @@ local config = {
     enable = true,
     transparency_amount = 20,
   },
+  palette = {
+    dark = {},
+    light = {},
+  },
   overrides = {},
   integrations = {
     lazy = true,
