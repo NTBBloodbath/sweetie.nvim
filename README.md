@@ -12,11 +12,11 @@ by hand after a long day testing different colors one by one and comparing them.
 
 <p align="center">dark variant</p>
 
-![dark variant demo](https://user-images.githubusercontent.com/36456999/221467923-d7b1ff8e-7eb2-461e-a8cb-f831a15ee75c.png)
+![dark variant demo](https://user-images.githubusercontent.com/36456999/223959884-0d2b3fc3-a8a9-4fff-a5ed-08dec742b68a.png)
 
 <p align="center">light variant</p>
 
-![light variant demo](https://user-images.githubusercontent.com/36456999/223639966-b204ba71-5342-40ef-b18c-c8571962093a.png)
+![light variant demo](https://user-images.githubusercontent.com/36456999/223960365-f47e7457-9fc2-4a18-8b1d-bc297ed73be7.png)
 
 ## Installation
 
