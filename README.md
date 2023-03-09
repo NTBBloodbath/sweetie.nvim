@@ -39,32 +39,46 @@ Just set the colorscheme in your configuration:
 vim.cmd.colorscheme("sweetie")
 ```
 
+> If you want to use light variant you can just change your `background` Neovim option to `light`.
+
 You can customize sweetie by using the `setup` function, too. Please note that you should
 call it before setting up sweetie as your colorscheme.
 ```lua
 --- Default configuration
 require("sweetie").setup({
+  -- Pop-up menu pseudo-transparency
   pumblend = {
     enable = true,
     transparency_amount = 20,
   },
+  -- Override default highlighting groups options
   overrides = {},
+  -- Custom plugins highlighting groups
   integrations = {
     lazy = true,
     neorg = true,
     neogit = true,
     telescope = true,
   },
+  -- Enable custom cursor coloring even in terminal Neovim sessions
   cursor_color = true,
+  -- Use sweetie's palette in `:terminal` instead of your default terminal colorscheme
   terminal_colors = true,
 })
 ```
 
 If you want to override any highlighting group, you can use the `overrides` field in
-the configuration table. For example, to disable italic comments:
+the configuration table. For example, to disable italics in the colorscheme:
 ```lua
 overrides = {
   Comment = { italic = false },
+  CommentBold = { italic = false },
+  Keyword = { italic = false },
+  Boolean = { italic = false },
+  Class = { italic = false },
+  -- Optional, just if you use Java and you do not want some extra italics
+  -- ["@type.java"] = { italic = false },
+  -- ["@type.qualifier.java"] = { italic = false },
 }
 ```
 
