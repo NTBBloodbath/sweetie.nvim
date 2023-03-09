@@ -3,7 +3,8 @@
 local plugins = {}
 
 --- Set up highlighting groups for plugins
----@param config
+---@param palette table
+---@param config config
 ---@return table
 plugins.setup = function(palette, config)
   local highlights = {}
