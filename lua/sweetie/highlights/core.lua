@@ -56,7 +56,7 @@ core.setup = function(palette)
 
     Conceal = { fg = palette.grey },
     NonText = { fg = palette.dark_grey, bold = true },
-    MatchParen = { reverse = true },
+    MatchParen = { bg = palette.bg_hl, bold = true },
     Whitespace = { link = "NonText" },
 
     Highlight = { bg = palette.bg_alt },
