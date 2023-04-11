@@ -36,6 +36,22 @@ lsp.setup = function(palette)
     DiagnosticVirtualTextInfo = { link = "TextMuted" },
     DiagnosticVirtualTextWarn = { link = "WarningMsg" },
     DiagnosticVirtualTextError = { link = "ErrorMsg" },
+
+    ["@lsp.type.type"] = { link = "@type" },
+    ["@lsp.type.enum"] = { link = "Enum" },
+    ["@lsp.type.class"] = { link = "Class" },
+    ["@lsp.type.macro"] = { link = "@macro" },
+    ["@lsp.type.method"] = { link = "@method" },
+    ["@lsp.type.struct"] = { link = "Structure" },
+    ["@lsp.type.comment"] = { link = "@comment" },
+    ["@lsp.type.variable"] = { link = "@variable" },
+    ["@lsp.type.property"] = { link = "@property" },
+    ["@lsp.type.function"] = { link = "@function" },
+    ["@lsp.type.parameter"] = { link = "@identifier" },
+    ["@lsp.type.decorator"] = { link = "@function" },
+    ["@lsp.type.interface"] = { link = "Structure" },
+    ["@lsp.type.namespace"] = { link = "@namespace" },
+    ["@lsp.type.enumMember"] = { link = "@constant" },
   }
 end
 
