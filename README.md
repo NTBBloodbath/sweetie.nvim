@@ -47,6 +47,7 @@ call it before setting up sweetie as your colorscheme.
 --- Default configuration
 require("sweetie").setup({
   -- Pop-up menu pseudo-transparency
+  -- It requires `pumblend` option to have a non-zero value
   pumblend = {
     enable = true,
     transparency_amount = 20,
