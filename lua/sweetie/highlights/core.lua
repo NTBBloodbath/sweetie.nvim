@@ -175,6 +175,13 @@ core.setup = function(palette)
     healthError = { link = "ErrorMsg" },
     healthSuccess = { link = "Msg" },
     healthWarning = { link = "WarningMsg" },
+
+    --- Spelling ---
+    ----------------
+    SpellBad = { sp = palette.red, underline = true },
+    SpellCap = { sp = palette.blue, underline = true },
+    SpellRare = { sp = palette.yellow, underline = true },
+    SpellLocal = { sp = palette.fg_alt, underline = true },
   }
 end
 
