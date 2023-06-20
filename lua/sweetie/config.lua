@@ -14,6 +14,7 @@ local config = {
     lazy = true,
     neorg = true,
     neogit = true,
+    neomake = true,
     telescope = true,
   },
   cursor_color = true,

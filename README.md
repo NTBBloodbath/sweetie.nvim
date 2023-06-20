@@ -80,6 +80,7 @@ require("sweetie").setup({
     lazy = true,
     neorg = true,
     neogit = true,
+    neomake = true,
     telescope = true,
   },
   -- Enable custom cursor coloring even in terminal Neovim sessions

@@ -63,6 +63,14 @@ plugins.setup = function(palette, config)
       NeogitUntrackedfiles = { fg = palette.violet, bold = true },
     })
   end
+  if integrations.neomake then
+    highlights = vim.tbl_extend("force", highlights, {
+      NeomakeError = { link = "TextError" },
+      NeomakeWarning = { link = "TextWarning" },
+      NeomakeInfo = { link = "TextInfo" },
+      NeomakeMessage = { link = "TextSuccess" },
+    })
+  end
   if integrations.telescope then
     highlights = vim.tbl_extend("force", highlights, {
       TelescopeNormal = { fg = palette.fg },
