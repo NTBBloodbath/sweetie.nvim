@@ -11,6 +11,7 @@ lsp.setup = function(palette)
 
     LspCodeLens = { fg = palette.grey },
     LspHighlight = { bg = palette.bg_alt, bold = true },
+    LspInlayHint = { fg = palette.grey, bold = true },
     LspReferenceText = { link = "LspHighlight" },
     LspReferenceRead = { link = "LspHighlight" },
     LspReferenceWrite = { link = "LspHighlight" },
