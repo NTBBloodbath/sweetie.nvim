@@ -15,7 +15,8 @@ jobs:
         uses: nvim-neorocks/luarocks-tag-release@v5
         with:
           copy_directories: |
-            {{ neovim.plugin.dirs }}
+            colors
+            extras
           test_interpreters:
         env:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
