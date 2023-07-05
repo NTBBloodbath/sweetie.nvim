@@ -1,0 +1,21 @@
+name: LuaRocks release
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  luarocks:
+    runs-on: ubuntu-latest
+    name: LuaRocks upload
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: LuaRocks upload
+        uses: nvim-neorocks/luarocks-tag-release@v5
+        with:
+          labels: |
+            neovim
+            colorscheme
+        env:
+          LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
