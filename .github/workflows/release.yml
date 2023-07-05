@@ -17,5 +17,6 @@ jobs:
           labels: |
             neovim
             colorscheme
+          test_interpreters:
         env:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
