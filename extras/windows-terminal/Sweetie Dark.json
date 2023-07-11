@@ -1,0 +1,25 @@
+{
+    "name": "Sweetie Dark",
+    "background": "#2a2a3e",
+    "foreground": "#fdfffd",
+    "selectionBackground": "#232331",
+    "cursorColor": "#75daff",
+
+    "black": "#232331",
+    "red": "#e87272",
+    "green": "#91f582",
+    "yellow": "#f4b47c",
+    "blue": "#75daff",
+    "purple": "#e9b5ff",
+    "cyan": "#77f8e7",
+    "white": "#fdfffd",
+
+    "brightBlack": "#7e7e7e",
+    "brightRed": "#e87272",
+    "brightGreen": "#91f582",
+    "brightYellow": "#f7e277",
+    "brightBlue": "#75daff",
+    "brightPurple": "#c8b5ff",
+    "brightCyan": "#b5e9ff",
+    "brightWhite": "#eeffee"
+}
