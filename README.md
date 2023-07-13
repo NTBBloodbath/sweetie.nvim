@@ -117,6 +117,7 @@ overrides = {
   - [x] termux
   - [ ] fish shell
   - [x] florisboard
+  - [x] windows terminal
 
 ## License
 

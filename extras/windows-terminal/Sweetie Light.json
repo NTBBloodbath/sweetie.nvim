@@ -1,0 +1,25 @@
+{
+    "name": "Sweetie Light",
+    "background": "#dddde7",
+    "foreground": "#202023",
+    "selectionBackground": "#bbbbce",
+    "cursorColor": "#78789d",
+
+    "black": "#202023",
+    "red": "#b31919",
+    "green": "#287f0d",
+    "yellow": "#ae580e",
+    "blue": "#0c5090",
+    "purple": "#a00c79",
+    "cyan": "#47948a",
+    "white": "#fdfffd",
+
+    "brightBlack": "#78789d",
+    "brightRed": "#b31919",
+    "brightGreen": "#287f0d",
+    "brightYellow": "#957d09",
+    "brightBlue": "#0c5090",
+    "brightPurple": "#9437ff",
+    "brightCyan": "#0b658e",
+    "brightWhite": "#8989a9"
+}
