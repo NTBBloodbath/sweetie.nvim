@@ -178,10 +178,10 @@ core.setup = function(palette)
 
     --- Spelling ---
     ----------------
-    SpellBad = { sp = palette.red, underline = true },
-    SpellCap = { sp = palette.blue, underline = true },
-    SpellRare = { sp = palette.yellow, underline = true },
-    SpellLocal = { sp = palette.fg_alt, underline = true },
+    SpellBad = { sp = palette.red, undercurl = true },
+    SpellCap = { sp = palette.blue, undercurl = true },
+    SpellRare = { sp = palette.yellow, undercurl = true },
+    SpellLocal = { sp = palette.fg_alt, undercurl = true },
   }
 end
 
