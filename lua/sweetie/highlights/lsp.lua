@@ -4,10 +4,10 @@ local lsp = {}
 
 lsp.setup = function(palette)
   return {
-    MsgUnderline = { sp = palette.green, underline = true },
-    MoreMsgUnderline = { sp = palette.blue, underline = true },
-    ErrorMsgUnderline = { sp = palette.red, underline = true },
-    WarningMsgUnderline = { sp = palette.yellow, underline = true },
+    MsgUnderline = { sp = palette.green, undercurl = true },
+    MoreMsgUnderline = { sp = palette.blue, undercurl = true },
+    ErrorMsgUnderline = { sp = palette.red, undercurl = true },
+    WarningMsgUnderline = { sp = palette.yellow, undercurl = true },
 
     LspCodeLens = { fg = palette.grey },
     LspHighlight = { bg = palette.bg_alt, bold = true },
