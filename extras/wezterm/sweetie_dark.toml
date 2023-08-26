@@ -1,0 +1,86 @@
+[metadata]
+name = "sweetie_dark"
+author = "NTBBloodbath"
+origin_url = "https://github.com/NTBBloodbath/sweetie.nvim"
+
+[colors]
+foreground = "#fdfffd"
+background = "#2a2a3a"
+cursor_fg = "#2a2a3a"
+cursor_bg = "#75daff"
+cursor_border = "#232331"
+compose_cursor = "#77f8e7"
+selection_fg = "#eeffee"
+selection_bg = "#37374c"
+scrollbar_thumb = "#75daff"
+split = "#37374c"
+visual_bell = "#f7e277"
+ansi = [
+    "#232331",
+    "#e87272",
+    "#91f582",
+    "#f4b47c",
+    "#75daff",
+    "#e95bff",
+    "#77f8e7",
+    "#eeffee"
+]
+brights = [
+    "#5e5e5e",
+    "#e87272",
+    "#91f582",
+    "#f7e277",
+    "#75daff",
+    "#d8b5ff",
+    "#b5e9ff",
+    "#fdfffd"
+]
+
+[colors.indexed]
+16 = "#ff7eb6"
+17 = "#3ddbd9"
+
+[colors.tab_bar]
+background = "#37374c"
+inactive_tab_edge = "#37374c"
+inactive_tab_edge_hover = "#7e7e7e"
+
+[colors.tab_bar.active_tab]
+bg_color = "#5e5e5e"
+fg_color = "#eeffee"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#7e7e7e"
+fg_color = "#fdfffd"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#2a2a3a"
+fg_color = "#fdfffd"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#2a2a3a"
+fg_color = "#eeffee"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#37374c"
+fg_color = "#f2f4f8"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
