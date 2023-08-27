@@ -10,10 +10,10 @@ local highlights = require("sweetie.highlights")
 
 -- fallback to default configuration values if there is no user configuration yet
 -- and merge defaults with user configuration values otherwise
-if not vim.g.sweetie or #vim.g.sweetie <= 0 then
+if not type(vim.g.sweetie) == "table" and not vim.tbl_isempty(vim.g.sweetie) then
   vim.g.sweetie = default_config
 else
-  vim.g.sweetie = vim.tbl_deep_extend("force", default_config, vim.g.sweetie)
+  vim.g.sweetie = vim.tbl_deep_extend("keep", vim.g.sweetie, default_config)
 end
 
 sweetie.set = function()
