@@ -3,8 +3,8 @@
 local highlights = {}
 
 --- Set up highlighting groups
----@param config table Sweetie configuration
-highlights.setup = function(config)
+highlights.setup = function()
+  local config = vim.g.sweetie
   local current_bg = vim.opt.background:get()
   local palettes = vim.tbl_deep_extend("force", require("sweetie.colors").palette, config.palette)
   local palette = palettes[current_bg]
@@ -37,7 +37,7 @@ highlights.setup = function(config)
     end
   end
 
-  --- Apply custom cursor color
+  --- Apply custom cursor color, using the default values for `:h 'guicursor'`
   if config.cursor_color then
     vim.opt.guicursor = "n-v-c:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor25-Cursor"
   end

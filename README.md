@@ -1,7 +1,8 @@
 # sweetie.nvim
 
 A clean, delightful and highly customizable Neovim colorscheme written in Lua that
-includes [extra themes](./extras) for other software like Kitty terminal.
+includes [extra themes](./extras) for other software like Kitty and WezTerm terminal
+emulators.
 
 Sweetie has a great contrast that is friendly with your eyes, every color was selected
 by hand after a long day testing different colors one by one and comparing them.
@@ -41,11 +42,11 @@ vim.cmd.colorscheme("sweetie")
 
 > If you want to use light variant you can just change your `background` Neovim option to `light`.
 
-You can customize sweetie by using the `setup` function, too. Please note that you should
+You can customize sweetie by using the `vim.g.sweetie` table, too. Please note that you should
 call it before setting up sweetie as your colorscheme.
 ```lua
 --- Default configuration
-require("sweetie").setup({
+vim.g.sweetie = {
   -- Pop-up menu pseudo-transparency
   -- It requires `pumblend` option to have a non-zero value
   pumblend = {
@@ -88,7 +89,7 @@ require("sweetie").setup({
   cursor_color = true,
   -- Use sweetie's palette in `:terminal` instead of your default terminal colorscheme
   terminal_colors = true,
-})
+}
 ```
 
 If you want to override any highlighting group, you can use the `overrides` field in
