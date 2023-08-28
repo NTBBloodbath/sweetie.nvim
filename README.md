@@ -57,7 +57,7 @@ vim.g.sweetie = {
   -- Palette fields:
   --  bg
   --  fg
-  --  bg_hl 
+  --  bg_hl
   --  bg_alt
   --  fg_alt
   --  grey
@@ -89,6 +89,8 @@ vim.g.sweetie = {
   cursor_color = true,
   -- Use sweetie's palette in `:terminal` instead of your default terminal colorscheme
   terminal_colors = true,
+  -- Use the legacy dark theme background colors
+  use_legacy_dark_bg = false,
 }
 ```
 
