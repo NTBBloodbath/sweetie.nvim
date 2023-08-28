@@ -51,7 +51,7 @@ colors.palette = {
 }
 
 -- If the end user wants to restore old background colors
-if vim.g.sweetie.use_legacy_dark_bg then
+if type(vim.g.sweetie) == "table" and vim.g.sweetie.use_legacy_dark_bg then
   colors.palette.dark.bg = "#2a2a3a"
   colors.palette.dark.bg_hl = "#37374c"
   colors.palette.dark.bg_alt = "#232331"
