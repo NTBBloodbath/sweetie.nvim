@@ -7,17 +7,20 @@ emulators.
 Sweetie has a great contrast that is friendly with your eyes, every color was selected
 by hand after a long day testing different colors one by one and comparing them.
 
-> sweetie.nvim requires at least Neovim `>= 0.7.2` in order to work!
+> sweetie.nvim requires at least Neovim `>=
+ 0.7.2` in order to work!
 
 ---
 
 <p align="center">dark variant</p>
 
-![dark variant demo](https://user-images.githubusercontent.com/36456999/223959884-0d2b3fc3-a8a9-4fff-a5ed-08dec742b68a.png)
+![dark variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/a9c04544-9f4e-4b91-abfa-598953043b9c)
+
 
 <p align="center">light variant</p>
 
-![light variant demo](https://user-images.githubusercontent.com/36456999/223960365-f47e7457-9fc2-4a18-8b1d-bc297ed73be7.png)
+![light variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/b192670f-641b-469f-ba42-43e3d93b266c)
+
 
 ## Installation
 
