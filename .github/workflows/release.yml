@@ -10,12 +10,10 @@ jobs:
     name: LuaRocks upload
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
       - name: LuaRocks upload
         uses: nvim-neorocks/luarocks-tag-release@v5
         with:
-          copy-directories: |
-            colors
           test_interpreters:
         env:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
