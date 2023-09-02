@@ -13,7 +13,7 @@ local highlights = require("sweetie.highlights")
 if not type(vim.g.sweetie) == "table" and not vim.tbl_isempty(vim.g.sweetie) then
   vim.g.sweetie = default_config
 else
-  vim.g.sweetie = vim.tbl_deep_extend("keep", vim.g.sweetie, default_config)
+  vim.g.sweetie = vim.tbl_deep_extend("keep", vim.g.sweetie or {}, default_config)
 end
 
 sweetie.set = function()
