@@ -14,6 +14,8 @@ jobs:
       - name: LuaRocks upload
         uses: nvim-neorocks/luarocks-tag-release@v5
         with:
+          copy_directories: |
+            {{ neovim.plugin.dirs }}
           test_interpreters:
         env:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
