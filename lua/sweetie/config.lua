@@ -19,7 +19,6 @@ local config = {
   },
   cursor_color = true,
   terminal_colors = true,
-  use_legacy_dark_bg = false,
 }
 
 return config

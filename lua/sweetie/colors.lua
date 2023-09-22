@@ -7,12 +7,12 @@ local colors = {}
 ---@field light table<string, string>
 colors.palette = {
   dark = {                 -- Prev col | Contrast
-    bg = "#1d1f23",        -- #2a2a3a  \ New 16.42
+    bg = "#2a2a3a",        -- #2a2a3a  \ New 16.42
     fg = "#fdfffd",        -- #fdfffd  / Old 14.02
 
-    bg_hl = "#2d3037",     -- #37374c  \ 11.53 | 13.15
+    bg_hl = "#37374c",     -- #37374c  \ 11.53 | 13.15
 
-    bg_alt = "#0f1113",    -- #232331  \ New 18.18
+    bg_alt = "#232331",    -- #232331  \ New 18.18
     fg_alt = "#eeffee",    -- #eeffee  / Old 14.88
 
     grey = "#929292",      -- #7e7e7e  \ 03.47 | 05.30
@@ -49,13 +49,6 @@ colors.palette = {
     cyan = "#0b658e",
   },
 }
-
--- If the end user wants to restore old background colors
-if type(vim.g.sweetie) == "table" and vim.g.sweetie.use_legacy_dark_bg then
-  colors.palette.dark.bg = "#2a2a3a"
-  colors.palette.dark.bg_hl = "#37374c"
-  colors.palette.dark.bg_alt = "#232331"
-end
 
 --- Get sweetie palette variant based on current background
 ---@param current_bg string Current Neovim background
