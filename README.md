@@ -14,7 +14,7 @@ by hand after a long day testing different colors one by one and comparing them.
 
 <p align="center">dark variant</p>
 
-![dark variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/a9c04544-9f4e-4b91-abfa-598953043b9c)
+![dark variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/ec596aec-9f96-4d30-9207-b8753c79b7cc)
 
 
 <p align="center">light variant</p>
