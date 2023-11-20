@@ -1,0 +1,30 @@
+# name: 'Sweetie light'
+# url: 'https://github.com/NTBBloodbath/sweetie.nvim'
+# preferred_background: dddde7
+
+fish_color_normal 202023
+fish_color_command 0c5090
+fish_color_param 9437ff
+fish_color_keyword 0c5090
+fish_color_quote 287f0d
+fish_color_redirection 18181a
+fish_color_end ae580e
+fish_color_comment 8989a9
+fish_color_error b31919
+fish_color_gray 8989a9
+fish_color_selection --background=bbbbce
+fish_color_search_match --background=ccccda
+fish_color_option 287f0d
+fish_color_operator 9437ff
+fish_color_escape 9437ff
+fish_color_autosuggestion 78789d
+fish_color_cancel b31919
+fish_color_cwd ae580e
+fish_color_user 47948a
+fish_color_host_remote 287f0d
+fish_color_host 0c5090
+fish_color_status 957d09
+fish_pager_color_progress bbbbce
+fish_pager_color_prefix a00c79
+fish_pager_color_completion 18181a
+fish_pager_color_description bbbbce
