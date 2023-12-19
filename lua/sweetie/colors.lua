@@ -6,26 +6,26 @@ local colors = {}
 ---@field dark table<string, string>
 ---@field light table<string, string>
 colors.palette = {
-  dark = {                 -- Prev col | Contrast
-    bg = "#2a2a3a",        -- #2a2a3a  \ New 16.42
-    fg = "#fdfffd",        -- #fdfffd  / Old 14.02
+  dark = {
+    bg = "#2a2a3a",
+    fg = "#fdfffd",
 
-    bg_hl = "#37374c",     -- #37374c  \ 11.53 | 13.15
+    bg_hl = "#37374c",
 
-    bg_alt = "#232331",    -- #232331  \ New 18.18
-    fg_alt = "#eeffee",    -- #eeffee  / Old 14.88
+    bg_alt = "#232331",
+    fg_alt = "#eeffee",
 
-    grey = "#929292",      -- #7e7e7e  \ 03.47 | 05.30
-    dark_grey = "#7d7d7d", -- #5e5e5e  / 02.17 | 04.01
-    red = "#e78888",       -- #e87272  \ 04.75 | 06.50
-    orange = "#f4b47c",    -- #f4b47c  / 07.83 | 09.17
-    green = "#85ff72",     -- #91f582  \ 10.46 | 13.00
-    teal = "#70ffec",      -- #77f8e7  / 10.98 | 13.52
-    yellow = "#ffe24f",    -- #f7e277  \ 10.80 | 12.98
-    blue = "#6ad7ff",      -- #75daff  / 08.87 | 10.04
-    magenta = "#e7aeff",   -- #e9b5ff  \ 08.40 | 09.35
-    violet = "#d5b0ff",    -- #d8b5ff  / 08.03 | 09.02
-    cyan = "#90deff",      -- #b5e9ff  \ 10.78 | 11.06
+    grey = "#9a9a98",
+    dark_grey = "#898989",
+    red = "#e78888",
+    orange = "#f2a15b",
+    green = "#7bee57",
+    teal = "#00f5c9",
+    yellow = "#ffd62f",
+    blue = "#6cb1f3",
+    magenta = "#f8a1e1",
+    violet = "#d4afff", -- "#cfa5fc",
+    cyan = "#61d0fb",
   },
   light = {
     bg = "#dddde7",
