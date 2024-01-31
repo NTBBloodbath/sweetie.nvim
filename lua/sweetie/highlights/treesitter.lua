@@ -199,6 +199,10 @@ treesitter.setup = function(palette)
       default = true,
       link = "Delimiter",
     },
+    ["@error"] = {
+      default = true,
+      link = "ErrorMsg",
+    },
     ["@text"] = {
       default = true,
       link = "@none",
