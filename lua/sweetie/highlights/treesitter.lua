@@ -209,7 +209,7 @@ treesitter.setup = function(palette)
     },
     ["@text.danger"] = {
       default = true,
-      link = "WarningMsg",
+      link = "ErrorMsg",
     },
     ["@text.emphasis"] = {
       default = true,
@@ -259,7 +259,7 @@ treesitter.setup = function(palette)
     },
     ["@text.warning"] = {
       default = true,
-      link = "Todo",
+      link = "WarningMsg",
     },
     ["@text.todo"] = {
       default = true,
