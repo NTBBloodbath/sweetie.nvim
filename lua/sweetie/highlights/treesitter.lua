@@ -10,7 +10,7 @@ treesitter.setup = function(palette)
     },
     ["@attribute"] = {
       default = true,
-      link = "PreProc",
+      link = "Attribute",
     },
     ["@boolean"] = {
       default = true,
@@ -27,6 +27,26 @@ treesitter.setup = function(palette)
     ["@comment"] = {
       default = true,
       link = "Comment",
+    },
+    ["@comment.documentation"] = {
+      default = true,
+      link = "CommentBold",
+    },
+    ["@comment.error"] = {
+      default = true,
+      link = "ErrorMsg",
+    },
+    ["@comment.warning"] = {
+      default = true,
+      link = "WarningMsg",
+    },
+    ["@comment.todo"] = {
+      default = true,
+      link = "Todo",
+    },
+    ["@comment.note"] = {
+      default = true,
+      link = "MoreMsg",
     },
     ["@conditional"] = {
       default = true,
@@ -64,10 +84,6 @@ treesitter.setup = function(palette)
       default = true,
       link = "Identifier",
     },
-    ["@float"] = {
-      default = true,
-      link = "Float",
-    },
     ["@function"] = {
       default = true,
       link = "Function",
@@ -78,11 +94,19 @@ treesitter.setup = function(palette)
     },
     ["@function.call"] = {
       default = true,
-      link = "@function",
+      link = "Function",
     },
     ["@function.macro"] = {
       default = true,
       link = "Macro",
+    },
+    ["@function.method"] = {
+      default = true,
+      link = "Function",
+    },
+    ["@function.method.call"] = {
+      default = true,
+      link = "Function",
     },
     ["@include"] = {
       default = true,
@@ -116,6 +140,14 @@ treesitter.setup = function(palette)
       default = true,
       link = "@method",
     },
+    ["@module"] = {
+      default = true,
+      link = "Include",
+    },
+    ["@module.builtin"] = {
+      default = true,
+      fg = palette.violet,
+    },
     ["@namespace"] = {
       default = true,
       link = "Include",
@@ -126,6 +158,10 @@ treesitter.setup = function(palette)
     ["@number"] = {
       default = true,
       link = "Number",
+    },
+    ["@number.float"] = {
+      default = true,
+      link = "Float",
     },
     ["@operator"] = {
       default = true,
@@ -145,7 +181,7 @@ treesitter.setup = function(palette)
     },
     ["@property"] = {
       default = true,
-      link = "Identifier",
+      link = "Property",
     },
     ["@punctuation.bracket"] = {
       default = true,
@@ -183,6 +219,14 @@ treesitter.setup = function(palette)
       default = true,
       link = "SpecialChar",
     },
+    ["@string.special.url"] = {
+      default = true,
+      link = "URL",
+    },
+    ["@string.documentation"] = {
+      default = true,
+      link = "String",
+    },
     ["@symbol"] = {
       default = true,
       link = "Identifier",
@@ -193,7 +237,7 @@ treesitter.setup = function(palette)
     },
     ["@tag.attribute"] = {
       default = true,
-      link = "@property",
+      link = "@attribute",
     },
     ["@tag.delimiter"] = {
       default = true,
@@ -288,6 +332,58 @@ treesitter.setup = function(palette)
     ["@variable.builtin"] = {
       default = true,
       link = "VariableBuiltin",
+    },
+    ["@markup.strong"] = {
+      default = true,
+      bold = true,
+    },
+    ["@markup.italic"] = {
+      default = true,
+      italic = true,
+    },
+    ["@markup.strikethrough"] = {
+      default = true,
+      strikethrough = true,
+    },
+    ["@markup.underline"] = {
+      default = true,
+      underline = true,
+    },
+    ["@markup.heading"] = {
+      default = true,
+      link = "Title",
+    },
+    ["@markup.quote"] = {
+      default = true,
+      link = "@punctuation.delimiter",
+    },
+    ["@markup.math"] = {
+      default = true,
+      link = "@symbol",
+    },
+    ["@markup.environment"] = {
+      default = true,
+      link = "Macro",
+    },
+    ["@markup.link"] = {
+      default = true,
+      underline = true,
+    },
+    ["@markup.link.url"] = {
+      default = true,
+      link = "URL",
+    },
+    ["@diff.plus"] = {
+      default = true,
+      link = "DiffAdd",
+    },
+    ["@diff.minus"] = {
+      default = true,
+      link = "DiffDelete",
+    },
+    ["@diff.delta"] = {
+      default = true,
+      link = "DiffChange",
     },
   }
 end
