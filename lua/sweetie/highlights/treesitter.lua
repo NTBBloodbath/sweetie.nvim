@@ -108,6 +108,10 @@ treesitter.setup = function(palette)
       default = true,
       link = "Function",
     },
+    ["@identifier"] = {
+      default = true,
+      link = "Identifier",
+    },
     ["@include"] = {
       default = true,
       link = "Include",
