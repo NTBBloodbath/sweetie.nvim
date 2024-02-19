@@ -142,6 +142,10 @@ core.setup = function(palette)
     DiffDelete = { fg = palette.red, bold = true },
     DiffText = { fg = palette.orange, bg = palette.bg, bold = true },
 
+    Added = { fg = palette.green },
+    Changed = { fg = palette.orange },
+    Removed = { fg = palette.red },
+
     --- Text levels ---
     -------------------
     TextNormal = { fg = palette.fg },
