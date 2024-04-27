@@ -2,7 +2,7 @@
 
 A clean, delightful and highly customizable Neovim colorscheme written in Lua that
 includes [extra themes](./extras) for other software like Kitty and WezTerm terminal
-emulators.
+emulators, FISH shell and some others.
 
 Sweetie has a great contrast that is friendly with your eyes, every color was selected
 by hand after a long day testing different colors one by one and comparing them.
@@ -14,22 +14,25 @@ by hand after a long day testing different colors one by one and comparing them.
 
 <p align="center">dark variant</p>
 
-![dark variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/ec596aec-9f96-4d30-9207-b8753c79b7cc)
-
+![dark variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/5f019e49-74d3-47d7-9e4b-3c2bd0258534)
 
 <p align="center">light variant</p>
 
-![light variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/b192670f-641b-469f-ba42-43e3d93b266c)
-
+![light variant demo](https://github.com/NTBBloodbath/sweetie.nvim/assets/36456999/dbb93e07-b97f-4c86-98b7-c2fd6ec9df08)
 
 ## Installation
 
-- `packer.nvim`:
+- [`rocks.nvim`](https://github.com/nvim-neorocks/rocks.nvim):
+```vim
+:Rocks install sweetie.nvim
+```
+
+- [`packer.nvim`](https://github.com/wbthomason/packer.nvim):
 ```lua
 use("NTBBloodbath/sweetie.nvim")
 ```
 
-- `lazy.nvim`:
+- [`lazy.nvim`](https://github.com/folke/lazy.nvim):
 ```lua
 require("lazy").setup({
   { "NTBBloodbath/sweetie.nvim" }
@@ -41,6 +44,12 @@ require("lazy").setup({
 Just set the colorscheme in your configuration:
 ```lua
 vim.cmd.colorscheme("sweetie")
+```
+
+You can also use the following method if you're using [`rocks-config.nvim`](https://github.com/nvim-neorocks/rocks-config.nvim) with your `rocks.nvim` installation:
+```toml
+[config]
+colorscheme = "sweetie"
 ```
 
 > If you want to use light variant you can just change your `background` Neovim option to `light`.
@@ -119,7 +128,7 @@ overrides = {
 - [ ] Add more extra themes
   - [ ] bat
   - [x] termux
-  - [ ] fish shell
+  - [x] fish shell
   - [x] florisboard
   - [x] windows terminal
 
