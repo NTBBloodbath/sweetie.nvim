@@ -24,7 +24,7 @@ colors.palette = {
     teal = "#92d3c5",
     yellow = "#e7d482",
     blue = "#73a3f3",
-    magenta = "#c592e8", -- slightly darker shade: #a079d0
+    magenta = "#d087e8",
     violet = "#b094e2",
     cyan = "#a2c4ff",
   },
