@@ -3,8 +3,8 @@
 local colors = {}
 
 ---@class colors.palette
----@field dark { [string]: string }[]
----@field light { [string]: string }[]
+---@field dark table<string, string>
+---@field light table<string, string>
 colors.palette = {
   dark = {
     bg = "#2a2a3a",
@@ -53,7 +53,7 @@ colors.palette = {
 
 ---Get sweetie palette variant based on current background
 ---@param current_bg string Current Neovim background
----@return colors.palette
+---@return table<string, string>
 colors.get_palette = function(current_bg) return colors.palette[current_bg] end
 
 return colors
