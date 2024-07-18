@@ -1,7 +1,7 @@
 [colors]
 [colors.primary]
-foreground = "#2a2a3e"
-background = "#fdfffd"
+foreground = "#fdfffd"
+background = "#2a2a3e"
 [colors.cursor]
 cursor = "#75daff"
 [colors.normal]
