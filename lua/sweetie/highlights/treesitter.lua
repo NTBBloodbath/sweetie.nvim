@@ -337,6 +337,14 @@ treesitter.setup = function(palette)
       default = true,
       link = "VariableBuiltin",
     },
+    ["@variable.member"] = {
+      default = true,
+      link = "Field",
+    },
+    ["@variable.function"] = {
+      default = true,
+      link = "Argument",
+    },
     ["@markup.strong"] = {
       default = true,
       bold = true,
