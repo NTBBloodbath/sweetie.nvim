@@ -17,6 +17,11 @@ languages.setup = function(palette)
     markdownH2 = { fg = palette.blue, bold = true },
     markdownHeadingDelimiter = { fg = palette.cyan, bold = true },
     markdownLinkText = { link = "URL" },
+
+    --- TOML ---
+    ------------
+    tomlKey = { fg = palette.violet },
+    tomlKeyDq = { fg = palette.violet },
   }
 end
 
